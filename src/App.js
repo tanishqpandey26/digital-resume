@@ -1,5 +1,10 @@
 
 import './App.css';
+import material from './material/profile-pic.jpg' ; 
+import React from 'react';
+import pdfFile from './material/resume.pdf' ;
+
+import { Document, Page } from 'react-pdf';
 
 function App() {
   return (
@@ -15,7 +20,15 @@ function App() {
                   <li>
                     <a href='#showcase' target="_blank">GitHub</a>
                   </li>
-                  <li><a href="C:\Users\tanis\Documents\web development\react\digital-resume\public\material\resume.pdf"  target="_blank">Resume</a>
+
+                  <li>
+                    <a href={
+                      <div>
+                        <Document file={pdfFile}>
+                          <Page pageNumber={1}/>
+                        </Document>
+                      </div>
+                    }  target="_blank">Resume</a>
                    
                   </li>
                   <li>
@@ -41,7 +54,7 @@ function App() {
 
         <section id="wrapper--hero" class="section--page">
 
-           <img id="profile--pic"  src="C:\Users\tanis\Documents\web development\react\digital-resume\public\material\profile-pic.jpg" alt=""></img>
+           <img id="profile--pic"  src={require("./material/profile-pic.jpg")} alt="profile-pic"></img>
 
            <div>
             <h1 id="user-name">Tanishq Pandey</h1>
