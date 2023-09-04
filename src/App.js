@@ -2,12 +2,12 @@
 import './App.css';
 import material from './material/profile-pic.jpg' ; 
 import React from 'react';
-import pdfFile from './resume.pdf' ;
-import Pdf from "../src/material/resume.pdf"
-
+// import pdfFile from './material/resume.pdf' ;
+// import Pdf from "../src/material/resume.pdf";
 import { Document, Page } from 'react-pdf';
 
 function App() {
+
   return (
     <div className="App">
       
@@ -23,14 +23,13 @@ function App() {
                   </li>
 
                   <li>
-                    <a href={
-                      <div>
-                        <Document file={pdfFile}>
-                          <Page pageNumber={1}/>
-                        </Document>
-                      </div>
-                    }  target="_blank">Resume</a>
-                   
+                    
+                      
+                    <a href='f' target='_blank'>
+                    Resume</a>
+                    
+                  
+
                   </li>
                   <li>
                     <a href='#' target="_blank">Contact</a>
