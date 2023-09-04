@@ -15,7 +15,7 @@ function App() {
                   <li>
                     <a href='#showcase' target="_blank">GitHub</a>
                   </li>
-                  <li><a href="src\material\resume.pdf"  target="_blank">Resume</a>
+                  <li><a href="C:\Users\tanis\Documents\web development\react\digital-resume\public\material\resume.pdf"  target="_blank">Resume</a>
                    
                   </li>
                   <li>
@@ -23,7 +23,7 @@ function App() {
                     
                   </li>
                   <li>    
-                    <a href='#' target="_blank">Twitter</a>
+                    <a href='' target="_blank">Twitter</a>
                   </li>
                 </ul>
                 
@@ -41,7 +41,7 @@ function App() {
 
         <section id="wrapper--hero" class="section--page">
 
-           <img id="profile--pic"  src="../" alt=""></img>
+           <img id="profile--pic"  src="C:\Users\tanis\Documents\web development\react\digital-resume\public\material\profile-pic.jpg" alt=""></img>
 
            <div>
             <h1 id="user-name">Tanishq Pandey</h1>
