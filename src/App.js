@@ -4,14 +4,14 @@ import material from './material/profile-pic.jpg' ;
 import React from 'react';
 // import pdfFile from './material/resume.pdf' ;
 // import Pdf from "../src/material/resume.pdf";
-import { Document, Page } from 'react-pdf';
+// import { Document, Page } from 'react-pdf';
 
 function App() {
 
   return (
     <div className="App">
       
-      <div id="showcase">
+      {/* <div id="showcase">
         <header>
             <nav class='cf'>
                 <ul class='cf'>
@@ -42,10 +42,9 @@ function App() {
                 
               </nav>
         </header>
-        </div>
+        </div> */}
 
-        <br></br>
-        <br></br>
+        
         
         
 
@@ -63,23 +62,23 @@ function App() {
            </div>
         </section>
 
-    {/* <!--  <section class="section--page">
+       <section class="section--page">
             <div id="socials--list">
-
-                <a href="#" target="_blank">YouTube</a>
-
-                <a href="#" target="_blank">Twitter</a>
 
                 <a href="#" target="_blank">Linkedin</a>
 
                 <a href="#" target="_blank">GitHub</a>
 
-                <a href="./assets/resume.pdf"  target="_blank">Download Resume</a>
+                <a href="#" target="_blank">Download Resume</a>
+
+                <a href="#" target="_blank">Contact</a>
+
+                <a href="./assets/resume.pdf"  target="_blank">Twitter</a>
 
 
             </div>
         </section>
-    --> */}
+    
         <section class="section--page">
         
             <h2>Skills and Qualifications</h2>

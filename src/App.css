@@ -1,6 +1,6 @@
 .App {
-  /* text-align: center; */
-  padding: 0%;
+   /* text-align: center;  */
+  padding-top: 0em;
 }
 
 .App-logo {
@@ -64,10 +64,10 @@
 }
 
 nav {
-  /* display: flex;
+   display: flex;
     justify-content: space-between;
     column-gap: 1em;
-     flex-wrap: wrap;  */
+     flex-wrap: wrap;  
 
     position: fixed; 
     padding-top: 0;
@@ -174,12 +174,12 @@ gap: 4em;
 }
 
 
-/* #socials--list{
+ #socials--list{
     display: flex;
     justify-content: space-between;
     column-gap: 1em;
     flex-wrap: wrap;
-} */
+} 
 
 #socials--list a{
     font-size:0.9em;
