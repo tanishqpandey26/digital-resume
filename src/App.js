@@ -173,9 +173,9 @@ function App() {
 
 <br></br>
 
-<div class="footer--bottomtext--center">
+{/* <div class="footer--bottomtext--center">
     Copyright &copy; 2023
-  </div>
+  </div> */}
 
 
     </div>
