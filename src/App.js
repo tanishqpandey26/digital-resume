@@ -2,7 +2,8 @@
 import './App.css';
 import material from './material/profile-pic.jpg' ; 
 import React from 'react';
-import pdfFile from './material/resume.pdf' ;
+import pdfFile from './resume.pdf' ;
+import Pdf from "../src/material/resume.pdf"
 
 import { Document, Page } from 'react-pdf';
 
@@ -86,11 +87,11 @@ function App() {
 
             <ul id="qualifications--list">
 
-                <li>✔️ No Skill at all</li>
+                <li>✔️ gjhgshjdg</li>
 
-                <li>✔️ Imaginary Skills only</li>
+                <li>✔️ hfsdhfskjh</li>
 
-                <li>✔️ Dumb as Fuck</li>
+                <li>✔️ jhfgsdjgf</li>
 
             </ul>
 
@@ -105,15 +106,15 @@ function App() {
 <div id="wrapper--techstack--items">
 
 <div class="card--techstack">
-    <span>Java, JavaScript, React</span>
+    <span>Java, JavaScript, React.js</span>
 </div>
 
 <div class="card--techstack">
-    <span>Khuch nahe aata bhai</span>
+    <span>gjhsdfjghgsfh</span>
 </div>
 
 <div class="card--techstack">
-    <span>Autism, mentally retarded</span>
+    <span>fhsdjkhhgkj</span>
 </div>
 
 </div>
