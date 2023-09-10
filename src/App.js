@@ -2,50 +2,77 @@
 import './App.css';
 import material from './material/profile-pic.jpg' ; 
 import React from 'react';
-// import pdfFile from './material/resume.pdf' ;
-// import Pdf from "../src/material/resume.pdf";
-// import { Document, Page } from 'react-pdf';
+
 
 function App() {
 
+
+  function toggleMenu(){
+
+    const menu = document.querySelector(".menu-links");
+
+    const icon = document.querySelector(".hamburger-icon");
+
+    menu.classList.toggle("open");
+
+    icon.classList.toggle("open");
+  
+  }
+
   return (
     <div className="App">
-      
-      {/* <div id="showcase">
-        <header>
-            <nav class='cf'>
-                <ul class='cf'>
-                  <li class="hide-on-small">
-                    <a href='#' target="_blank">Linkedin</a>
-                  </li>
-                  <li>
-                    <a href='#showcase' target="_blank">GitHub</a>
-                  </li>
 
-                  <li>
-                    
-                      
-                    <a href='f' target='_blank'>
-                    Resume</a>
-                    
-                  
 
-                  </li>
-                  <li>
-                    <a href='#' target="_blank">Contact</a>
-                    
-                  </li>
-                  <li>    
-                    <a href='' target="_blank">Twitter</a>
-                  </li>
-                </ul>
-                
-              </nav>
-        </header>
-        </div> */}
+<nav id='desktop-nav'>
 
-        
-        
+<div className='logo'>Tanishq Pandey</div>
+
+<div>
+  <ul className='nav-links'>
+
+     <li><a href='#about'>Linkedin </a></li>
+
+     <li><a href='#about'>GitHub</a></li>
+
+     <li><a href='#about'>Resume</a></li>
+
+     <li><a href='#about'> Twitter</a></li>
+
+
+  </ul>
+</div>
+
+</nav>
+
+<nav id='hamburger-nav'>
+
+<div className='logo'>Tanishq Pandey</div>
+<div className='hamburger-menu'>
+<div className='hamburger-icon' onClick={toggleMenu}>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div className='menu-links'>
+
+<li><a href='#about' onClick={toggleMenu} >Linkedin</a></li>
+
+<li><a href='#about' onClick={toggleMenu}>GitHub</a></li>
+
+<li><a href='#about' onClick={toggleMenu}>Resume</a></li>
+
+<li><a href='#about' onClick={toggleMenu}>Twitter</a></li>
+
+
+</div>
+</div>
+
+</nav>
+
+
+
+       
         
 
 
@@ -62,22 +89,8 @@ function App() {
            </div>
         </section>
 
-       <section class="section--page">
-            <div id="socials--list">
-
-                <a href="#" target="_blank">Linkedin</a>
-
-                <a href="#" target="_blank">GitHub</a>
-
-                <a href="#" target="_blank">Download Resume</a>
-
-                <a href="#" target="_blank">Contact</a>
-
-                <a href="./assets/resume.pdf"  target="_blank">Twitter</a>
-
-
-            </div>
-        </section>
+      
+      
     
         <section class="section--page">
         
