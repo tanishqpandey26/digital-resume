@@ -243,6 +243,7 @@ gap: 4em;
     nav {
 		height: auto;
 		border-bottom: 0;
+   
 	
 	  ul {
 		  display: none;
@@ -452,7 +453,7 @@ a:hover{
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: #333;
   width: fit-content;
   max-height: 0;
   overflow: hidden;

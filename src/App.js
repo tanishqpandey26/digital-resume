@@ -2,6 +2,7 @@
 import './App.css';
 import material from './material/profile-pic.jpg' ; 
 import React from 'react';
+import {FaTwitter, FaGithub,FaLinkedin,FaFilePdf} from "react-icons/fa";
 
 
 function App() {
@@ -30,13 +31,13 @@ function App() {
 <div>
   <ul className='nav-links'>
 
-     <li><a href='#about'>Linkedin </a></li>
+     <li><a href='#about'> <FaTwitter/> </a></li>
 
-     <li><a href='#about'>GitHub</a></li>
+     <li><a href='#about'><FaGithub/></a></li>
 
-     <li><a href='#about'>Resume</a></li>
+     <li><a href='#about'><FaFilePdf/></a></li>
 
-     <li><a href='#about'> Twitter</a></li>
+     <li><a href='#about'> <FaTwitter/></a></li>
 
 
   </ul>
@@ -56,13 +57,13 @@ function App() {
 
 <div className='menu-links'>
 
-<li><a href='#about' onClick={toggleMenu} >Linkedin</a></li>
+<li><a href='#about' onClick={toggleMenu} ><FaLinkedin/></a></li>
 
-<li><a href='#about' onClick={toggleMenu}>GitHub</a></li>
+<li><a href='#about' onClick={toggleMenu}><FaGithub/></a></li>
 
-<li><a href='#about' onClick={toggleMenu}>Resume</a></li>
+<li><a href='#about' onClick={toggleMenu}><FaFilePdf/></a></li>
 
-<li><a href='#about' onClick={toggleMenu}>Twitter</a></li>
+<li><a href='#about' onClick={toggleMenu}><FaTwitter/></a></li>
 
 
 </div>
