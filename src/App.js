@@ -1,204 +1,392 @@
 
 import './App.css';
-import material from './material/profile-pic.jpg' ; 
+
 import React from 'react';
-import {FaTwitter, FaGithub,FaLinkedin,FaFilePdf} from "react-icons/fa";
+
+import {FaTwitter, FaGithub,FaLinkedin,FaFilePdf, FaGit} from "react-icons/fa";
+
+import {TbBadgesFilled} from "react-icons/tb";
+
+import {MdEmail} from "react-icons/md";
+
+import {FaAward} from "react-icons/fa"
+
+import {MdPeople} from "react-icons/md"
+
+import {BsPatchCheckFill} from "react-icons/bs";
+
+import profilepic from "./material/profile-pic.jpg";
+
+import secondpic from "./material/linkedin dp edited.jpeg";
+
+import project3 from "./material/Screenshot (5).png";
+
+import project2 from "./material/Screenshot (6).png"
 
 
 function App() {
 
 
-  function toggleMenu(){
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
-    const menu = document.querySelector(".menu-links");
-
-    const icon = document.querySelector(".hamburger-icon");
-
-    menu.classList.toggle("open");
-
-    icon.classList.toggle("open");
-  
+  function toggleMenu() {
+    setMenuOpen(!menuOpen);
   }
+  
+  function scrollHandler(targetId) {
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+}
+ 
+
 
   return (
-    <div className="App">
+   <div className='App'>
 
 
-<nav id='desktop-nav'>
 
-<div className='logo'>Tanishq Pandey</div>
+<nav id="desktop-nav">
+      <div class="logo">Tanishq Pandey</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<div>
-  <ul className='nav-links'>
-
-     <li><a href='#about'> <FaTwitter/> </a></li>
-
-     <li><a href='#about'><FaGithub/></a></li>
-
-     <li><a href='#about'><FaFilePdf/></a></li>
-
-     <li><a href='#about'> <FaTwitter/></a></li>
-
-
-  </ul>
-</div>
-
-</nav>
-
-<nav id='hamburger-nav'>
-
-<div className='logo'>Tanishq Pandey</div>
-<div className='hamburger-menu'>
-<div className='hamburger-icon' onClick={toggleMenu}>
-<span></span>
-<span></span>
-<span></span>
-</div>
-
-<div className='menu-links'>
-
-<li><a href='#about' onClick={toggleMenu} ><FaLinkedin/></a></li>
-
-<li><a href='#about' onClick={toggleMenu}><FaGithub/></a></li>
-
-<li><a href='#about' onClick={toggleMenu}><FaFilePdf/></a></li>
-
-<li><a href='#about' onClick={toggleMenu}><FaTwitter/></a></li>
-
-
-</div>
-</div>
-
+    <nav id="hamburger-nav">
+  <div className="logo">Tanishq Pandey</div>
+  <div className="hamburger-menu">
+    <div className="hamburger-icon" onClick={toggleMenu}>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div className={menuOpen ? "menu-links open" : "menu-links"}>
+      <li><a href="#about" onClick={toggleMenu}>About</a></li>
+      <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
+      <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+      <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+    </div>
+  </div>
 </nav>
 
 
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src={profilepic} alt='Profile p' className='profile-image' />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tanishq Pandey</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
 
-       
+          <button className="btn btn-color-1" onClick={()=>window.open("https://www.linkedin.com/in/pandey26tanishq/")}>
+            <FaLinkedin size={20}/>
+          </button>
+
+          <button className="btn btn-color-1" onClick={()=>window.open("https://github.com/tanishqpandey26")} >
+            <FaGithub size={20}/>
+          </button>
+
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" >
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src={secondpic}
+            alt="Profile pp"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+             <FaAward
+             size={30}/>
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+            <MdPeople
+            size={30}
+            />
+              <h3>Education</h3>
+              <p>B.TECH <br />Computer Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <TbBadgesFilled
+    className="icon arrow"
+    size={30}  // adjust this for the desired size
+    onClick={() => scrollHandler('experience')}
+/>
+    </section>
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                            <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              {/* <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> */}
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              {/* <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> */}
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <TbBadgesFilled
+    className="icon arrow"
+    size={30}  // adjust this for the desired size
+    onClick={() => scrollHandler('projects')}
+/>
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          {/* <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> */}
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={project2}
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+               onClick={()=>window.open("https://digital-resume-fawn.vercel.app/")}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={project3}
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={()=>window.open("https://cotlog-social-blog-website.vercel.app/")}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <TbBadgesFilled
+    className="icon arrow"
+    size={30}  // adjust this for the desired size
+    onClick={() => scrollHandler('contact')}
+/>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
         
-
-
-    <div id="container--main">
-
-        <section id="wrapper--hero" class="section--page">
-
-           <img id="profile--pic"  src={require("./material/profile-pic.jpg")} alt="profile-pic"></img>
-
-           <div>
-            <h1 id="user-name">Tanishq Pandey</h1>
-            <p id="bio">Software Developer</p>
-            <p>👉 tanishqpandeyofficial@gmail.com</p>
-           </div>
-        </section>
-
-      
-      
-    
-        <section class="section--page">
+        <div class="contact-info-container">
+        <button
+          onclick=""
+          >
+            <MdEmail size={30}/>
+          </button>
+          <p><a href="mailto:examplemail@gmail.com">tanishqpandeyofficial@gmail.com</a></p>
+        </div>
         
-            <h2>Skills and Qualifications</h2>
-
-            <ul id="qualifications--list">
-
-                <li>✔️ gjhgshjdg</li>
-
-                <li>✔️ hfsdhfskjh</li>
-
-                <li>✔️ jhfgsdjgf</li>
-
-            </ul>
-
-        </section>
-
-
-<section class="section--page">
-
-
-<h2>Tech Stack</h2>
-
-<div id="wrapper--techstack--items">
-
-<div class="card--techstack">
-    <span>Java, JavaScript, React.js</span>
-</div>
-
-<div class="card--techstack">
-    <span>gjhsdfjghgsfh</span>
-</div>
-
-<div class="card--techstack">
-    <span>fhsdjkhhgkj</span>
-</div>
-
-</div>
-
-</section>
+        <div className="contact-info-container">
+        <button onClick={() => window.open("https://www.linkedin.com/in/pandey26tanishq/")}>
+            <FaLinkedin size={30}/>
+          </button>
+          <p><a href="https://www.linkedin.com/in/pandey26tanishq/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Tanishq Pandey</p>
+    </footer>
 
 
-<section id="work--history--wrapper" class="section--page">
 
-    <h2>Projects</h2>
-
-    <div class="line--break"></div>
-
-    <div class="card--work--history">
-
-        <h4>Digital Resume-Web Development </h4>
-        <p>09/2023</p>
-        <p>Worked on making a Digital Resume Website to showcase my skills and qualifications. </p>
-
-    </div>
-    
-    <div class="line--break"></div>
-
-    <div class="card--work--history">
-        
-        <h4>Digital Resume-Web Development </h4>
-        <p>09/2023</p>
-        <p>Worked on making a Digital Resume Website to showcase my skills and qualifications. </p>
-
-    </div>
-    
-    <div class="line--break"></div>
-
-
-    
-</section>
-
-<section class="section--page">
-    <h2>Projects & Accomplishments</h2>
-
-    <div class="card--project">
-        <a href="project1.html"><span>🏆 </span>Built a Laboratory management system for forensics lab</a>
-    </div>
-
-    <div class="card--project">
-        <a href="project1.html" ><span>🏆 </span>Documentation website - Lead team to re-build docs for agora.io</a>
-    </div>
-
-    <div class="card--project">
-        <a href="project1.html" ><span>🏆 </span>Ecommerce platform using paypal and stripe API for payment integration</a>
-    </div>
-
-    <div class="card--project">
-        <a href="project1.html"><span>🏆 </span>Social Network - open source project</a>
-    </div>
-
-</section>
-
-<br></br>
-
-{/* <div class="footer--bottomtext--center">
-    Copyright &copy; 2023
-  </div> */}
-
-
-    </div>
-
-    {/* </div> */}
-
-    
-    </div>
-  )
+   </div>
+  );
 }
 
 export default App;

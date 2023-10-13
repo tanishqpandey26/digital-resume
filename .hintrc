@@ -9,7 +9,9 @@
         "ignore": [
           "width: fit-content",
           "scroll-behavior",
-          "text-underline-offset"
+          "text-underline-offset",
+          "min-height: fit-content",
+          "height: fit-content"
         ]
       }
     ]
