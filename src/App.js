@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import React from 'react';
+import React, { useRef } from 'react';
 
 import {FaTwitter, FaGithub,FaLinkedin,FaFilePdf, FaGit} from "react-icons/fa";
 
@@ -24,6 +24,8 @@ import project3 from "./material/Screenshot (5).png";
 import project2 from "./material/Screenshot (6).png"
 
 
+
+
 function App() {
 
 
@@ -39,6 +41,10 @@ function App() {
         targetSection.scrollIntoView({ behavior: "smooth" });
     }
 }
+
+   
+const contactSectionRef = useRef(null);
+   
  
 
 
@@ -85,16 +91,24 @@ function App() {
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Tanishq Pandey</h1>
         <p class="section__text__p2">Software Engineer</p>
+
         <div class="btn-container">
+
+        <button
+  className="btn btn-color-2"
+  onClick={() => window.open('/CV/CV_tanishqpandey.pdf')}
+>
+  Download CV
+</button>
+
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+        className="btn btn-color-1"
+        onClick={() => {
+          contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        Contact Info
+      </button>
         </div>
         <div id="socials-container">
 
@@ -216,7 +230,7 @@ function App() {
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                <BsPatchCheckFill 
@@ -266,6 +280,7 @@ function App() {
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
           {/* <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -290,6 +305,33 @@ function App() {
               </button>
             </div>
           </div> */}
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={project3}
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={()=>window.open("https://github.com/tanishqpandey26/Cotlog-social_blog_website")}
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={()=>window.open("https://cotlog-social-blog-website.vercel.app/")}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -302,7 +344,7 @@ function App() {
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onClick={()=>window.open("https://github.com/tanishqpandey26/digital-resume")}
               >
                 Github
               </button>
@@ -314,30 +356,8 @@ function App() {
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={project3}
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={()=>window.open("https://cotlog-social-blog-website.vercel.app/")}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+
+
         </div>
       </div>
       <TbBadgesFilled
@@ -347,7 +367,7 @@ function App() {
 />
     </section>
 
-    <section id="contact">
+    <section id="contact" ref={contactSectionRef}>
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
