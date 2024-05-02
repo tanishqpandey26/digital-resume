@@ -3,7 +3,7 @@ import './App.css';
 
 import React, { useRef } from 'react';
 
-import {FaTwitter, FaGithub,FaLinkedin,FaFilePdf, FaGit} from "react-icons/fa";
+import {FaGithub,FaLinkedin} from "react-icons/fa";
 
 import {TbBadgesFilled} from "react-icons/tb";
 
@@ -153,12 +153,8 @@ const contactSectionRef = useRef(null);
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+            As a passionate Computer Engineering student, I'm deeply immersed in the world of software and web development. I believe in leveraging technology to craft solutions that enhance user experience and streamline processes. 
+With a solid foundation in coding and software design principles, I'm eager to collaborate on projects that push boundaries and embrace innovation. I continuously strive to upgrade my skills and stay updated with the latest industry trends, looking forward to connecting with like-minded professionals and exploring opportunities that challenge and grow my expertise in the tech realm.
             </p>
           </div>
         </div>
@@ -378,7 +374,7 @@ const contactSectionRef = useRef(null);
           >
             <MdEmail size={30}/>
           </button>
-          <p><a href="mailto:examplemail@gmail.com">tanishqpandeyofficial@gmail.com</a></p>
+          <p><a href="mailto:tanishqpandeyofficial@gmail.com">tanishqpandeyofficial@gmail.com</a></p>
         </div>
         
         <div className="contact-info-container">
