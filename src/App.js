@@ -204,30 +204,19 @@ With a solid foundation in coding and software design principles, I'm eager to c
                size={30}/>
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Experienced</p>
                 </div>
               </article>
+
               <article>
                <BsPatchCheckFill 
                size={30}/>
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              {/* <article>
-               <BsPatchCheckFill 
-               size={30}/>
-                <div>
-                  <h3>Material UI</h3>
                   <p>Intermediate</p>
                 </div>
-              </article> */}
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
+              </article>
+
               <article>
                <BsPatchCheckFill 
                size={30}/>
@@ -236,6 +225,31 @@ With a solid foundation in coding and software design principles, I'm eager to c
                   <p>Basic</p>
                 </div>
               </article>
+
+              {/* <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> */}
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
               <article>
                <BsPatchCheckFill 
                size={30}/>
