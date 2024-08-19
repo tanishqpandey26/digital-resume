@@ -15,13 +15,13 @@ import {MdPeople} from "react-icons/md"
 
 import {BsPatchCheckFill} from "react-icons/bs";
 
-import profilepic from "./material/profile-pic.jpg";
+import DigitalResumeProfilePic from "./material/DigitalResumeProfilePic.jpeg";
 
 import secondpic from "./material/linkedin dp edited.jpeg";
 
-import project3 from "./material/Screenshot (5).png";
+import Cotlog from "./material/Cotlog.png";
 
-import project2 from "./material/Screenshot (6).png"
+import Tripper from "./material/Tripper.png"
 
 
 
@@ -85,7 +85,7 @@ const contactSectionRef = useRef(null);
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src={profilepic} alt='Profile p' className='profile-image' />
+        <img src={DigitalResumeProfilePic} alt='Profile p' className='profile-image' />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -315,16 +315,42 @@ With a solid foundation in coding and software design principles, I'm eager to c
               </button>
             </div>
           </div> */}
+
           
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src={project3}
-                alt="Project 3"
+                src={Tripper}
+                alt="Project 2"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={()=>window.open("https://github.com/tanishqpandey26/Tripper")}
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+               onClick={()=>window.open("https://tripper-ui.vercel.app/")}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={Cotlog}
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -341,31 +367,6 @@ With a solid foundation in coding and software design principles, I'm eager to c
             </div>
           </div>
 
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={project2}
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={()=>window.open("https://github.com/tanishqpandey26/digital-resume")}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-               onClick={()=>window.open("https://digital-resume-fawn.vercel.app/")}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
 
 
         </div>
