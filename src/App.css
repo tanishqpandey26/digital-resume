@@ -453,7 +453,7 @@ article .icon {
 
 /* FOOTER SECTION */
 
-footer {
+.footer {
   height: 26vh;
   margin: 0 1rem;
 }
@@ -463,6 +463,59 @@ footer p {
   color: #000 !important;
 }
 
+.form-container{
+
+  margin: 4rem 6rem;
+  color: #2a2a2a;
+}
+
+
+.form-container h1 {
+    text-align: center !important;
+}
+  
+
+
+.form-container form {
+
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input{
+
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #2a2a2a;
+}
+
+.form-container textarea{
+
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #2a2a2a;
+}
+
+.form-container button{
+  color: #fff;
+  background-color: #333;
+  display: inline;
+  box-shadow: 0 0 10px rgba(0,0, 0, 0.1) !important;
+  border-radius: 10px;
+  transition: 0.5s;
+  height: 50px;
+}
+
+.form-container button:hover{
+
+  background-color: #555;
+}
 
 
 
@@ -516,11 +569,31 @@ footer p {
       margin-top: 0;
     }
   }
+
+  
+@media screen and (max-width:850px){
+
+  .form-container{
+
+      margin: 4rem 2rem !important;
+      
+  }
+
+  .form-container form {
+
+      padding-top: 2rem;
+      width: 90%;
+   
+  }
+  
+
+}
   
   @media screen and (max-width: 600px) {
     #contact,
     footer {
       height: 40vh;
+      margin-top: 300px;
     }
     #profile {
       height: 83vh;
