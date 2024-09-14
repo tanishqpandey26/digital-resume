@@ -1,0 +1,78 @@
+/* ABOUT ME SECTION */
+
+#about {
+    position: relative;
+  }
+  
+  .section__text__p1 {
+    /* Assuming similar to general p styles */
+    /* Add any specific styles if needed */
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    height: 80%;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .about-pic {
+    border-radius: 2rem;
+    margin-bottom: 20px;
+    max-width: 100%;  
+    display: block;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+  
+  .text-container {
+    text-align: justify;
+  }
+  
+  .icon.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    #about{
+      margin-top: 60px;
+    }
+  }
+  

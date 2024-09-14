@@ -1,6 +1,7 @@
 import React from 'react';
 import {BsPatchCheckFill} from "react-icons/bs";
 import {TbBadgesFilled} from "react-icons/tb";
+import "./ExperienceStyles.css";
 
 function Experience() {
 
@@ -25,30 +26,25 @@ function Experience() {
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
-              <article>
+
+            <article>
                <BsPatchCheckFill 
                size={30}/>
-                            <div>
-                  <h3>HTML</h3>
+                <div>
+                  <h3>React.js</h3>
                   <p>Experienced</p>
                 </div>
               </article>
+
               <article>
                <BsPatchCheckFill 
                size={30}/>
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              {/* <article>
-               <BsPatchCheckFill 
-               size={30}/>
-                <div>
-                  <h3>SASS</h3>
+                  <h3>Next.js</h3>
                   <p>Intermediate</p>
                 </div>
-              </article> */}
+              </article>
+
               <article>
                <BsPatchCheckFill 
                size={30}/>
@@ -70,26 +66,45 @@ function Experience() {
               <article>
                <BsPatchCheckFill 
                size={30}/>
-                <div>
-                  <h3>React JS</h3>
-                  <p>Basic</p>
+                            <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
 
-              {/* <article>
+              <article>
                <BsPatchCheckFill 
                size={30}/>
                 <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
-              </article> */}
+              </article>
 
-            </div>
           </div>
+          </div>
+
           <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
+
+            <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+               <BsPatchCheckFill 
+               size={30}/>
+                <div>
+                  <h3>Express.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
 
               <article>
                <BsPatchCheckFill 
@@ -99,23 +114,7 @@ function Experience() {
                   <p>Experienced</p>
                 </div>
               </article>
-              
-              <article>
-               <BsPatchCheckFill 
-               size={30}/>
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-               <BsPatchCheckFill 
-               size={30}/>
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+
               <article>
                <BsPatchCheckFill 
                size={30}/>
@@ -124,8 +123,11 @@ function Experience() {
                   <p>Intermediate</p>
                 </div>
               </article>
+
             </div>
           </div>
+
+          
         </div>
       </div>
       <TbBadgesFilled

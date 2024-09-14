@@ -2,6 +2,7 @@ import React from 'react';
 import Cotlog from "../material/Cotlog.png";
 import Tripper from "../material/Tripper.png";
 import {TbBadgesFilled} from "react-icons/tb";
+import "./ProjectsStyles.css";
 
 function Projects() {
 
@@ -103,11 +104,13 @@ function Projects() {
 
         </div>
       </div>
+
       <TbBadgesFilled
-    className="icon arrow"
-    size={30}  // adjust this for the desired size
-    onClick={() => scrollHandler('contact')}
-/>
+      className="icon arrow"
+      size={30}  
+      onClick={() => scrollHandler('contact')}
+      />
+
     </section>
     
     </>

@@ -7,7 +7,7 @@ import Profile from './components/Profile';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from "./components/Navbar";
-
+import Blogs from "./components/Blogs";
 
 function App() {
 
@@ -31,19 +31,21 @@ function App() {
 
   <div className='App'>
 
-   <Navbar/> 
+  <Navbar/> 
 
-   <Profile onScrollToContact={handleScrollToContact}/>
+  <Profile onScrollToContact={handleScrollToContact}/>
     
-   <AboutMe/>
+  <AboutMe/>
 
-   <Experience/>
+  <Experience/>
 
-   <Projects/>
+  <Projects/>
 
-   <Contact ref={contactSectionRef}/>
+  <Contact ref={contactSectionRef}/>
 
-    <Footer/>
+  <Blogs/>
+
+  <Footer/>
 
   </div>
 

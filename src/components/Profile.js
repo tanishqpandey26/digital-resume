@@ -1,6 +1,7 @@
 import React from 'react';
 import DigitalResumeProfilePic from "../material/DigitalResumeProfilePic.jpeg";
 import {FaGithub,FaLinkedin} from "react-icons/fa";
+import "./ProfileStyles.css";
 
 function Profile({ onScrollToContact }) {
   
@@ -21,18 +22,18 @@ function Profile({ onScrollToContact }) {
         <div class="btn-container">
 
         <button
-  className="btn btn-color-2"
-  onClick={() => window.open('/CV_tanishqpandey.pdf', '_blank')}
->
-  Download CV
-</button>
+        className="btn btn-color-1"
+        onClick={() => window.open('/CV_tanishqpandey.pdf', '_blank')}
+        >
+        Resume
+        </button>
 
-           <button
-              className="btn btn-color-1"
-              onClick={onScrollToContact}
-            >
-              Contact Info
-            </button>
+        <button
+        className="btn btn-color-2"
+        onClick={onScrollToContact}
+        >
+        Contact Info
+        </button>
 
         </div>
         <div id="socials-container">

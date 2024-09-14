@@ -1,6 +1,8 @@
 import React, { forwardRef } from 'react';
 import {MdEmail} from "react-icons/md";
 import {FaLinkedin} from "react-icons/fa";
+import {TbBadgesFilled} from "react-icons/tb";
+import "./ContactStyles.css";
 
 const Contact = forwardRef((props, ref) => {
   const [result, setResult] = React.useState("");
@@ -28,6 +30,12 @@ const Contact = forwardRef((props, ref) => {
     }
   };
    
+  function scrollHandler(targetId) {
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+   }
 
   return (
    
@@ -54,29 +62,29 @@ const Contact = forwardRef((props, ref) => {
           </button>
           <p><a href="https://www.linkedin.com/in/pandey26tanishq/">LinkedIn</a></p>
         </div>
+        
       </div>
 
-      <div className='form-container'>
+    <div className='form-container'>
 
-<h1>Send a message to me!</h1>
+      <h1>Send a message to me!</h1>
 
-<form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit}>
+      <input type="text" name='name' placeholder='Name' required></input>
+      <input type="email" name='email' placeholder='Email' required></input>
+      <input placeholder='Subject' required></input>
+      <textarea placeholder='Message' rows="4" name='message' required></textarea>
+      <button type="submit">Send Message</button>
+      </form>
+      <span>{result}</span>
 
-    <input type="text" name='name' placeholder='Name' required></input>
+    </div>
 
-    <input type="email" name='email' placeholder='Email' required></input>
-
-    <input placeholder='Subject' required></input>
-
-    <textarea placeholder='Message' rows="4" name='message' required></textarea>
-
-    <button type="submit">Send Message</button>
-
-</form>
-
-<span>{result}</span>
-
-</div>
+    <TbBadgesFilled
+      className="icon arrow"
+      size={30}  
+      onClick={() => scrollHandler('contact')}
+    />
 
     </section>
     

@@ -1,8 +1,9 @@
 import React from 'react';
 import {FaAward} from "react-icons/fa"
 import {MdPeople} from "react-icons/md";
-import secondpic from "../material/linkedin dp edited.jpeg";
+import secondpic from "../material/linkedin-dp-edited.jpeg";
 import {TbBadgesFilled} from "react-icons/tb";
+import "./AboutMeStyles.css";
 
 function AboutMe() {
 

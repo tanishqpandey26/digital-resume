@@ -1,4 +1,5 @@
 import React from 'react';
+import "./NavbarStyles.css";
 
 function Navbar() {
 
@@ -21,6 +22,7 @@ function Navbar() {
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blogs</a></li>
         </ul>
       </div>
     </nav>
@@ -38,6 +40,7 @@ function Navbar() {
       <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
       <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
       <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+      <li><a href="#blog" onClick={toggleMenu}>Blogs</a></li>
     </div>
   </div>
 </nav>
