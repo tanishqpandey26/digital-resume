@@ -1,12 +1,8 @@
 export const blogItems =[
     {
-        title: "My First Blog",
-        content: "This is the content of my first blog.",
-        date: "August 25, 2024",
+        title: " Blog section added",
+        content: "I guess adding a blog section deserved a blog!",
+        date: "September 14, 2024",
       },
-      {
-        title: "Exploring React",
-        content: "A deep dive into React and its features.",
-        date: "August 24, 2024",
-      },
+      
 ] 

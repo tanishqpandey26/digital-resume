@@ -60,7 +60,7 @@ const Contact = forwardRef((props, ref) => {
         <button onClick={() => window.open("https://www.linkedin.com/in/pandey26tanishq/")}>
             <FaLinkedin size={30}/>
           </button>
-          <p><a href="https://www.linkedin.com/in/pandey26tanishq/">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/pandey26tanishq/">Linkedin</a></p>
         </div>
         
       </div>
