@@ -77,9 +77,6 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links:hover{
-  border: 1px solid #222;
-}
 
 .menu-links a {
   display: block;

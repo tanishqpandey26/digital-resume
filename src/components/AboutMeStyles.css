@@ -1,12 +1,6 @@
-/* ABOUT ME SECTION */
 
 #about {
     position: relative;
-  }
-  
-  .section__text__p1 {
-    /* Assuming similar to general p styles */
-    /* Add any specific styles if needed */
   }
   
   .title {
@@ -56,6 +50,10 @@
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+  }
+
+  .details-container:hover{
+    border: 1px solid #000;
   }
   
   .text-container {

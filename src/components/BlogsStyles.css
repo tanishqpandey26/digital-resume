@@ -15,16 +15,25 @@
   
   .blogs-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
   }
   
   .blog-item {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #222;
+  position: relative;
+  overflow: hidden;
+  }
+
+  .blog-item:hover{
+    border: 2px solid;
   }
   
   .blog-title {
@@ -33,13 +42,21 @@
   }
   
   .blog-content {
+    flex-grow: 1;
     font-size: 1.2rem;
     margin-bottom: 15px;
+    margin-top: auto;
+    overflow-y: auto;
+    max-height: 250px; 
   }
   
   .blog-date {
+    align-self: flex-start; 
     font-size: 0.9rem;
     color: #777;
+    
+    bottom: 10px; 
+    left: 10px; 
   }
   
   

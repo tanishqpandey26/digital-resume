@@ -33,7 +33,7 @@ function AboutMe() {
              <FaAward
              size={30}/>
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>2+ years <br />Web Development</p>
             </div>
             <div class="details-container">
             <MdPeople
