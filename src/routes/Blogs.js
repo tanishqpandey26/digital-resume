@@ -1,12 +1,12 @@
 import React from 'react';
-import { blogItems } from './blogItems';
-import "./BlogsStyles.css";
+import { blogItems } from "../components/blogItems";
+import "../components/BlogsStyles.css";
 
 function Blogs() {
 
   return (
 
-    <section id='blog'>
+    <section id='blogs'>
       <div className="blogs-container">
 
         <p className="section__text__p1">My</p>
@@ -17,13 +17,13 @@ function Blogs() {
 
           {blogItems.map((item, index) => (
 
-            <div key={index} className="blog-item">
+            <div key={index} className="blogs-item">
 
-              <h2 className="blog-title">{item.title}</h2>
+              <h2 className="blogs-title">{item.title}</h2>
 
-              <div className="blog-content" dangerouslySetInnerHTML={{ __html: item.content }} />
+              <div className="blogs-content" dangerouslySetInnerHTML={{ __html: item.content }} />
 
-              <span className="blog-date">{item.date}</span>
+              <span className="blogs-date">{item.date}</span>
               
             </div>
           ))}

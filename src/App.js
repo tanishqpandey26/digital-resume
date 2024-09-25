@@ -1,52 +1,22 @@
 import './App.css';
-import React, { useRef, useState, useEffect } from 'react';
-import AboutMe from "./components/AboutMe";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Profile from './components/Profile';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Navbar from "./components/Navbar";
-import Blogs from "./components/Blogs";
+import React from 'react';
+import Blogs from "./routes/Blogs";
+import Home from "./routes/Home";
+import {Routes, Route } from 'react-router-dom';
 
 function App() {
-
-
-  const [scrollToContact, setScrollToContact] = useState(false);
-  const contactSectionRef = useRef(null);
-
-  useEffect(() => {
-    if (scrollToContact && contactSectionRef.current) {
-      contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-      setScrollToContact(false);  
-    }
-  }, [scrollToContact]);
-
-  function handleScrollToContact() {
-    setScrollToContact(true);
-  }
-
 
   return (
 
   <div className='App'>
 
-  <Navbar/> 
+  <Routes>
 
-  <Profile onScrollToContact={handleScrollToContact}/>
-    
-  <AboutMe/>
+  <Route path='/' element={<Home/>}></Route>  
+  <Route path='/blogs' element={<Blogs/>}></Route>
 
-  <Experience/>
-
-  <Projects/>
-
-  <Contact ref={contactSectionRef}/>
-
-  <Blogs/>
-
-  <Footer/>
-
+  </Routes>
+  
   </div>
 
   );
