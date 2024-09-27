@@ -4,13 +4,12 @@
     justify-content: center;
     flex-direction: column;
     height: auto;
-  
+    margin-bottom: 20px;
 }
   
   .blogs-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
   }
   
   .blogs-list {
@@ -39,6 +38,7 @@
   .blogs-title {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    align-self: flex-start; 
   }
   
   .blogs-content {

@@ -3,8 +3,8 @@
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding: 20px;
-  }
+    padding-top: auto ;
+    }
   
   .blog-container {
     margin: 0 auto;
@@ -80,13 +80,13 @@
   
     .blog-content {
       font-size: 1.1rem;
-      max-height: 150px;
+      max-height: 250px;
     }
   }
   
   @media (max-width: 600px) {
     .blog-container {
-      padding: 10px;
+      padding: 1px;
     }
   
     .b-title {
