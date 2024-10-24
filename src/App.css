@@ -1,4 +1,4 @@
-/* GENERAL */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -19,7 +19,7 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* TRANSITION */
+
 
 a,
 .btn {
@@ -32,7 +32,7 @@ a,
   font-size: 1.5rem;
 }
 
-/* SECTIONS */
+
 
 section {
   padding-top: 4vh;
@@ -42,26 +42,26 @@ section {
   min-height: fit-content;
 }
 
-/* ICONS */
+
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* BUTTONS */
+
 
 .btn-container {
   gap: 1rem;
 }
 
-/* MEDIA QUERIES */
+
 
 @media screen and (max-width: 1400px) {
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
+  #about,#contact,
   #projects {
     height: fit-content;
   }

@@ -1,7 +1,6 @@
 import React, { forwardRef } from 'react';
 import {MdEmail} from "react-icons/md";
 import {FaLinkedin} from "react-icons/fa";
-import {TbBadgesFilled} from "react-icons/tb";
 import "./ContactStyles.css";
 
 const Contact = forwardRef((props, ref) => {
@@ -29,13 +28,7 @@ const Contact = forwardRef((props, ref) => {
       setResult(data.message);
     }
   };
-   
-  function scrollHandler(targetId) {
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-    }
-   }
+  
 
   return (
    
@@ -79,12 +72,6 @@ const Contact = forwardRef((props, ref) => {
       <span>{result}</span>
 
     </div>
-
-    <TbBadgesFilled
-      className="icon arrow"
-      size={30}  
-      onClick={() => scrollHandler('contact')}
-    />
 
     </section>
     

@@ -18,8 +18,8 @@ function Navbar() {
       <div class="logo">Tanishq Pandey</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#blog">Blogs</a></li>
@@ -37,7 +37,7 @@ function Navbar() {
     </div>
     <div className={menuOpen ? "menu-links open" : "menu-links"}>
       <li><a href="#about" onClick={toggleMenu}>About</a></li>
-      <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
+      <li><a href="#experience" onClick={toggleMenu}>Skills</a></li>
       <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
       <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
       <li><a href="#blog" onClick={toggleMenu}>Blogs</a></li>

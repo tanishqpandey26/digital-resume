@@ -1,0 +1,65 @@
+#experience {
+  position: relative;
+  height: auto;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tech-stack-card {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+}
+
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+}
+
+
+article {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+article h3 {
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
+  .article-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.75rem;
+  }
+
+  article {
+    font-size: 1rem; 
+  }
+
+  .title {
+    font-size: 2rem; 
+  }
+}

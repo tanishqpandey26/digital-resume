@@ -11,15 +11,15 @@ function Profile({ onScrollToContact }) {
     <>
     
     <section id="profile">
-      <div class="section__pic-container">
+      <div className="section__pic-container">
         <img src={DigitalResumeProfilePic} alt='Profile p' className='profile-image' />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Tanishq Pandey</h1>
-        <p class="section__text__p2">Software Developer</p>
+      <div className="section__text">
+        <p className="section__text__p1">Hello, I'm</p>
+        <h1 className="title">Tanishq Pandey</h1>
+        <p className="section__text__p2">Software Engineer</p>
 
-        <div class="btn-container">
+        <div className="btn-container">
 
         <button
         className="btn btn-color-1"
