@@ -1,5 +1,33 @@
 export const blogItems = [
 
+  {
+    title: '5.Salt for brain & body',
+    content: `The fifth blog in this series, 'Using Salt to Optimize Mental & Physical Performance' covers the following:<br/>
+  1. There are two types of thirst: osmotic and hypovolemic, both of which drive the body to seek water and salt. <br/>
+  2. Vasopressin acts as an anti-diuretic hormone.<br/>
+  3. According to dietary recommendations, 2.3–4 grams of salt per day (about half a teaspoon) is advised. Keeping track of blood pressure is important, especially if hypertension is present.<br/>
+  4. Galpin Equation: Body weight in pounds divided by 30 equals the ounces of fluid recommended to drink every 15 minutes.<br/>
+  5. Carbohydrates help retain fluids in the body. If on a low-carb diet, increase salt intake, and vice versa.<br/>
+  6. Caffeine is a diuretic, so increasing salt and fluid intake may be helpful.`,
+    date: 'November 4, 2024'
+  },
+
+  {
+    title: '4.Hair loss and Hair Regrowth',
+    content: `The fourth blog in this series, 'The Science of Healthy Hair, Hair Loss and How to Regrow Hair' covers the following:<br/>
+
+  1. Hair growth consists of three phases: Anagen phase(hair grows), catagen phase(hair recedes and dies) and telogen phase (low active or quiet phase of stem cells) <br/>
+2. Dihydrotestosterone promotes catagen phase<br/>
+3. Minoxidil, vasodilator promotes hair growth but has side effects, oral dosage - 0.25 to 5mg per day, topical form - 5% concentration, 1-2 times applied for 5 mins, hair regrowth resulting from minoxidil stays as long as you keep on using it, so it becomes a lifelong procedure; Tadalafil 2.5 to 5mg <br/>
+4. Microneedling with needles 1 to 2.5 mm, combining microneedling with minoxidil is quite effective<br/>
+5. IGF1 and cyclic AMP are accelerators of hair growth, DHT inhibit them<br/>
+6. Caffeine in ointments as topical treatments, three times a week, botox procedures also help hair growth<br/>
+7. Iron levels in blood for men 30 to 150, women 25 to 100 , saw palmetto berries extract 300 mg a day in 2-3 doses<br/>
+8. Ketoconazole shampoo alteast 2% concentration , 2-4 times a week, with scalp contact of 3-5mins.<br/>
+9. Finasteride, in topical forms 1% concentration, can have severe side effects, oral form in range between 0.5 to 1mg <br/>
+10. Dutasterde in oral form in 0.5 to 2.5mg, more potent than finasteride but with more severe side effects`,
+    date: 'October 29, 2024'
+  },
   
   {
     title: '3.Microplastics & your health',
@@ -21,6 +49,7 @@ export const blogItems = [
   `,
     date: 'October 24, 2024',
   },
+
   {
     title: "2.Second blog on podcast summary",
     content: `The second blog in this series, 'Using Your Nervous System to Enhance Your Immune System' covers the following: <br/>  1. Practice nasal breathing and avoid touching your eyes. Consume 2-4 servings of fermented foods daily. <br/> 2. Elevate your heels by 12 degrees to support a better immune response. Try NSDR (Non-Sleep Deep Rest) with your feet elevated. <br/> 3. A 15-minute sauna session can enhance the immune system by increasing white blood cells. Aim for humidity levels of ±15%, with a cool-off period of 5 to 10 minutes before returning to the sauna. <br/> 4. Eating foods rich in serotonin can help combat infections. <br/> 5. Perform a breathing exercise: 25-30 inhales and exhales, followed by an exhale and hold period. Complete 3 sets of this exercise. <br/> 6. Maintaining a healthy mindset can aid in preventing and fighting sickness. Higher dopamine levels may also be beneficial. <br/> 7. Spirulina (2g) can help alleviate rhinitis. <br/> 8. Acupuncture may also be helpful but is highly individualized. `,

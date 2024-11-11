@@ -21,10 +21,7 @@ function Profile({ onScrollToContact }) {
 
         <div className="btn-container">
 
-        <button
-        className="btn btn-color-1"
-        onClick={() => window.open('/CV_tanishqpandey.pdf', '_blank')}
-        >
+        <button className="btn btn-color-1" onClick={()=>window.open("https://drive.google.com/file/d/1G3UWDM7o7Z0-18FfyvkoobAOIDF_lOnS/view?usp=drivesdk")}>
         Resume
         </button>
 

@@ -6,24 +6,18 @@ function Blog() {
 
   const latestBlog = {
 
-    title: '3.Microplastics & your health',
+    title: '5.Salt for brain & body',
     content: `
-    The third blog in this series, 'The Effects of Microplastics on Your Health & How to Reduce Them' covers the following: <br/>
+    The fifth blog in this series, 'Using Salt to Optimize Mental & Physical Performance' covers the following: <br/>
 
-1. Try to avoid using plastic water bottles as much as possible; if you have the budget, you can use RO filters to treat tap water. <br/>
-2. Sea salt contains microplastics; use Himalayan pink salt if possible, depending on your budget. <br/>
-3. Avoid canned soups; as a joke, eat them only when it is a matter of life and death. <br/>
-4. Dont microwave plastic containers; "microwave-safe" on a container means the container will not melt, but it does not guarantee that you wont be exposed to microplastics. <br/>
-5. Avoid consuming hot liquids in paper cups. <br/>
-6. Elevated levels of phthalate metabolites are associated with lower testosterone. <br/>
-7. The liver plays a crucial role in detoxifying microplastics from the body. This detoxification can be enhanced by consuming sulforaphane, present in cruciferous veggies such as broccoli and cauliflower. It is best if eaten raw or lightly cooked but not boiled. Andrew takes a supplement of 50 mg sulforaphane. <br/>
-8. Eating fiber can also help excrete microplastics. <br/>
-9. Avoid non-stick pans; use cast iron or ceramic pans. <br/>
-10. Sweating can assist in removing microplastics. <br/>
-11. Avoid packaged foods as much as possible; avoid washing clothes frequently, as it releases a lot of microplastic from the fibers. <br/>
-12. Avoid microwave popcorn; use tooth tablets instead of toothpaste. <br/>
+1. There are two types of thirst: osmotic and hypovolemic, both of which drive the body to seek water and salt.<br/>
+2. Vasopressin acts as an anti-diuretic hormone.<br/>
+3. According to dietary recommendations, 2.3–4 grams of salt per day (about half a teaspoon) is advised. Keeping track of blood pressure is important, especially if hypertension is present.<br/>
+4. Galpin Equation: Body weight in pounds divided by 30 equals the ounces of fluid recommended to drink every 15 minutes.<br/>
+5. Carbohydrates help retain fluids in the body. If on a low-carb diet, increase salt intake, and vice versa.<br/>
+6. Caffeine is a diuretic, so increasing salt and fluid intake may be helpful.<br/>
   `,
-    date: 'October 24, 2024',
+    date: 'November 4, 2024',
 
   }
   return (
