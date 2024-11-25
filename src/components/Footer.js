@@ -7,7 +7,7 @@ function Footer() {
     <>
     
     <footer>
-      <nav>
+      {/* <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
           <li><a href="#about">About Me</a></li>
@@ -17,7 +17,9 @@ function Footer() {
             <li><a href="#blog">Blogs</a></li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
+
+      <br/>
       <p>Copyright &#169; 2023 Tanishq Pandey</p>
     </footer>
 

@@ -32,8 +32,9 @@ function Projects() {
             </div>
             <div className="project-description">
               <h2 className="project-title">Project-One : Tripper</h2>
-              <p className="project-text"> 1. Tripper is a comprehensive trip planning platform designed to streamline the travel experience for both casual tourists and adventure seekers. <br/>
-              2. The platform aims to enhance the travel journey by providing all-in-one trip management tools, fostering a community of travel enthusiasts, and ensuring seamless collaboration between travel companions.</p>
+              <p className="project-text"> 1.Tripper: Trip planning website created using React.js, Node.js, Express.js, MongoDB, JavaScript. <br/>
+              2. Provides itinerary management, itinerary sharing, track expenses and share plans. <br/>
+              </p>
             </div>
           </div>
 
@@ -58,8 +59,8 @@ function Projects() {
             </div>
             <div className="project-description">
               <h2 className="project-title">Project-Two : Cotlog</h2>
-              <p className="project-text">1. CotLog is a social blogging platform designed to empower students and education seekers by providing authentic, firsthand reviews of colleges, universities, and academic courses. <br/>
-              2. The platform fosters a vibrant community where users can connect, share personal experiences, and exchange insights to help others navigate the complex world of higher education.</p>
+              <p className="project-text">1. Cotlog: Social blogging website created using React.js, JavaScript and Firebase. <br/>
+             2. Provides a platform for students, colleagues to share course overview and feedback</p>
             </div>
           </div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./BlogStyles.css";
 
@@ -6,20 +6,15 @@ function Blog() {
 
   const latestBlog = {
 
-    title: '5.Salt for brain & body',
-    content: `
-    The fifth blog in this series, 'Using Salt to Optimize Mental & Physical Performance' covers the following: <br/>
-
-1. There are two types of thirst: osmotic and hypovolemic, both of which drive the body to seek water and salt.<br/>
-2. Vasopressin acts as an anti-diuretic hormone.<br/>
-3. According to dietary recommendations, 2.3–4 grams of salt per day (about half a teaspoon) is advised. Keeping track of blood pressure is important, especially if hypertension is present.<br/>
-4. Galpin Equation: Body weight in pounds divided by 30 equals the ounces of fluid recommended to drink every 15 minutes.<br/>
-5. Carbohydrates help retain fluids in the body. If on a low-carb diet, increase salt intake, and vice versa.<br/>
-6. Caffeine is a diuretic, so increasing salt and fluid intake may be helpful.<br/>
-  `,
-    date: 'November 4, 2024',
-
+    title: 'CAT exam',
+    content: `I appeared for my CAT exam on 24th November. I had been preparing for it for the past six months. To be honest, I could have done better. I got a bit stressed, which resulted in me missing out on some doable questions. According to the analysis, the paper was easier compared to previous years. Now, just waiting for the results!`,
+    date: 'November 25, 2024',
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     
     <section id='blog'>
@@ -42,7 +37,9 @@ function Blog() {
 
           <div className="view-more-container">
             
-            <Link to="/blogs" className="view-more-link">
+            <Link to="/blogs" 
+            className="view-more-link"
+            onClick={() => window.scrollTo(0, 0)} >
               View All Blogs
             </Link>
           </div>

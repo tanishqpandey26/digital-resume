@@ -1,6 +1,13 @@
 export const blogItems = [
 
   {
+    title: 'CAT exam',
+    content: `I appeared for my CAT exam on 24th November. I had been preparing for it for the past six months. To be honest, I could have done better. I got a bit stressed, which resulted in me missing out on some doable questions. According to the analysis, the paper was easier compared to previous years. Now, just waiting for the results!`,
+    date: 'November 25, 2024',
+
+  },
+
+  {
     title: '5.Salt for brain & body',
     content: `The fifth blog in this series, 'Using Salt to Optimize Mental & Physical Performance' covers the following:<br/>
   1. There are two types of thirst: osmotic and hypovolemic, both of which drive the body to seek water and salt. <br/>
