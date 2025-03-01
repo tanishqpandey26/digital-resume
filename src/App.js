@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import React from 'react';
 import Blogs from "./routes/Blogs";
 import Home from "./routes/Home";
@@ -13,6 +13,7 @@ function App() {
   <Routes>
 
   <Route path='/' element={<Home/>}></Route>  
+  
   <Route path='/blogs' element={<Blogs/>}></Route>
 
   </Routes>

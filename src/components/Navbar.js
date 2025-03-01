@@ -1,52 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./NavbarStyles.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
 
-  const [menuOpen, setMenuOpen] = React.useState(false);
+ const [showMenu ,setshowMenu] = useState(false);
 
-  function toggleMenu() {
-    setMenuOpen(!menuOpen);
-  }
+const handlebuttonToggle = () =>{
+  setshowMenu(!showMenu);
+}
   
   return (
-    
-    <>
-    
-    
-<nav id="desktop-nav">
-      <div class="logo">Tanishq Pandey</div>
-      <div>
-        <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+  
+    <header>
+      <div className='container'>
+        <div className='grid navbar-grid'>
+          <div className='logo'>
+            <h1>Tanishq Pandey</h1>
+          </div>
+
+        <nav className={showMenu ? "menu-mobile" : "menu-web"}>
+          <ul>
+
+          <li><a href="#about">About Me</a></li>
           <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#blog">Blogs</a></li>
-        </ul>
+
+          </ul>
+        </nav>
+
+
+        <div className='ham-menu'>
+
+          <button onClick={handlebuttonToggle} >
+          <GiHamburgerMenu/>
+          </button>
+
+        </div>
+
+        </div>
       </div>
-    </nav>
-
-    <nav id="hamburger-nav">
-  <div className="logo">Tanishq Pandey</div>
-  <div className="hamburger-menu">
-    <div className="hamburger-icon" onClick={toggleMenu}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div className={menuOpen ? "menu-links open" : "menu-links"}>
-      <li><a href="#about" onClick={toggleMenu}>About</a></li>
-      <li><a href="#experience" onClick={toggleMenu}>Skills</a></li>
-      <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-      <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-      <li><a href="#blog" onClick={toggleMenu}>Blogs</a></li>
-    </div>
-  </div>
-</nav>
-
-</>
+    </header>
+    
+ 
   )
 }
 
-export default Navbar
+export default Navbar;
