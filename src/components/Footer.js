@@ -1,5 +1,6 @@
 import React from 'react';
 import "./FooterStyles.css";
+import {FaGithub,FaLinkedin,FaTwitter} from "react-icons/fa";
 
 const Footer = () =>{
 
@@ -17,19 +18,15 @@ const Footer = () =>{
             <div>
 
                 <a href='https://www.linkedin.com/in/pandey26tanishq'>
-                <i className='fa-brands fa-linkedin'></i>
+                <FaLinkedin/>
+                </a>
+                                
+                <a href='https://twitter.com/tanishqvatsa26'>
+                <FaTwitter/>
                 </a>
 
                 <a href='https://github.com/tanishqpandey26'>
-                <i className='fa-brands fa-github'></i>
-                </a>
-                
-                <a href='https://twitter.com/tanishqvatsa26'>
-                <i className='fa-brands fa-twitter'></i>
-                </a>
-
-                <a href='https://digital-resume-fawn.vercel.app/'>
-                <i className='fa-solid fa-file-pdf'></i>
+                <FaGithub/>
                 </a>
 
             </div>
@@ -49,7 +46,7 @@ const Footer = () =>{
             </div>
 
 <div>
-<h4>Socials</h4>
+<h4>Social</h4>
 
 <a href='https://www.linkedin.com/in/pandey26tanishq'>Linkedin</a>
 <a href='https://twitter.com/tanishqvatsa26'>Twitter</a>
@@ -90,9 +87,3 @@ const Footer = () =>{
 }
 
 export default Footer;
-
-// About Me</a></li>
-//           <li><a href=>Skills</a></li>
-//           <li><a href=>Projects</a></li>
-//           <li><a href="">Contact</a></li>
-//           <li><a href="">Blogs</a>

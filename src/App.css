@@ -17,7 +17,6 @@ html {
 section {
   padding-top: 4vh;
   height: fit-content;
-  margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -29,10 +28,6 @@ li{
 a{
   color: #000;
   text-decoration: none;
-
-  &:hover{
-    color: #2e86c1;
-  }
 }
 
 button{

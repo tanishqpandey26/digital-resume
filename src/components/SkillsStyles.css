@@ -1,5 +1,5 @@
 #experience {
-  position: relative;
+  margin: 12px 12px;
   height: auto;
 }
 
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 12px 12px;
 }
 
 .about-containers {
