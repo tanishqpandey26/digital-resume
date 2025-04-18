@@ -18,15 +18,19 @@ function Profile({ onScrollToContact }) {
         <p className="section__text__p1">Hello, I'm</p>
         <h1 className="title">Tanishq Pandey</h1>
         <p className="section__text__p2">Software Engineer</p>
-
+        <p className="about-description">
+          I am a versatile software engineer well versed with frontend and backend technologies,
+          specializing in TypeScript, React, Next.js, React Native, Express, and Node.js,
+          building robust and scalable applications.
+        </p>
         <div className="btn-container">
 
-        <button className="btn btn-color-1" onClick={()=>window.open("https://drive.google.com/file/d/1G3UWDM7o7Z0-18FfyvkoobAOIDF_lOnS/view?usp=drivesdk")}>
+        <button className="btn btn-color-1" onClick={()=>window.open("https://drive.google.com/file/d/13tZDdhy_r1GkML8f3Fza7HY5pPDSUO7j/view?usp=drive_link")}>
         Resume
         </button>
 
         <button
-        className="btn btn-color-2"
+        className="btn btn-color-1"
         onClick={onScrollToContact}
         >
         Contact Info

@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import AboutMe from '../components/AboutMe';
 import Navbar from '../components/Navbar';
 import Profile from '../components/Profile';
 import Skills from '../components/Skills';
@@ -26,25 +25,16 @@ function Home() {
 
     
   return (
-
     <div>
-         
+     
     <Navbar/> 
-
     <Profile onScrollToContact={handleScrollToContact}/>
-
-    <AboutMe/>
-
     <Skills/>
-
     <Projects/>
-
     <Contact ref={contactSectionRef}/>
-
     <Blog/>
-
     <Footer/>
-      
+    
     </div>
   )
 }

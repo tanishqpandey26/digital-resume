@@ -5,11 +5,13 @@
     flex-direction: column;
     height: auto;
     margin-bottom: 20px;
+    color: #fff;
 }
   
   .blogs-title {
     text-align: center;
     font-size: 2.5rem;
+    color: #fff;
   }
   
   .blogs-list {
@@ -25,8 +27,8 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
-  border: 1px solid #222;
+  background-color: #000;
+  border: 1px solid #fff;
   position: relative;
   overflow: hidden;
   }
@@ -53,7 +55,7 @@
   .blogs-date {
     align-self: flex-start; 
     font-size: 0.9rem;
-    color: #777;
+    color: #fff;
     
     bottom: 10px; 
     left: 10px; 

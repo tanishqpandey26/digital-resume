@@ -19,10 +19,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: white;
   border-radius: 10px;
   padding: 1.5rem;
-  border: 2px solid #222;
+  border: 1px solid #fff;
   gap: 1.5rem;
 }
 
@@ -55,16 +54,10 @@
 }
 
 .btn-color-2 {
-  background: rgb(53, 53, 53);
+  background: #000;
   color: white;
   border: rgb(163, 163, 163) 0.1rem solid;
 }
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-  background-color: #555;
-}
-
 
 .project-description {
   width: 55%; 
