@@ -4,6 +4,7 @@
     flex-direction: column;
     height: auto;
     padding-top: auto ;
+    background-color: #36393f;
     }
   
   .blog-container {
@@ -25,7 +26,7 @@
     padding: 20px;
     border: 1px solid #fff;
     border-radius: 8px;
-    background-color: #000;
+    background-color: #36393f;
     height: auto;
     max-height: 400px; 
     overflow-y: auto; 

@@ -6,6 +6,7 @@
     height: auto;
     margin-bottom: 20px;
     color: #fff;
+    background-color: #36393f;
 }
   
   .blogs-title {
@@ -27,7 +28,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #000;
+  background-color: #36393f;
   border: 1px solid #fff;
   position: relative;
   overflow: hidden;
@@ -55,8 +56,7 @@
   .blogs-date {
     align-self: flex-start; 
     font-size: 0.9rem;
-    color: #fff;
-    
+    color: #01959a;
     bottom: 10px; 
     left: 10px; 
   }

@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 5rem;
     height: auto;
+    background-color: #36393f;
   }
   
   .section__pic-container {
@@ -23,6 +24,7 @@
   .section__text {
     align-self: center;
     text-align: center;
+    color: #fff;
   }
   
   .section__text p {
@@ -117,10 +119,6 @@
     #profile,
     .section-container {
       display: block;
-    }
-  
-    section {
-      margin: 0 5%;
     }
   
     .section__pic-container {

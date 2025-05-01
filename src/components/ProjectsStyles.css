@@ -1,6 +1,7 @@
 #projects {
-  margin: 12px 12px;
   height: auto;
+  background-color: #36393f;
+  color: #fff;
 }
 
 .title {

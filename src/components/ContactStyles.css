@@ -41,11 +41,11 @@
     cursor: pointer;
     padding: 0;
    }
+ 
+   .contact-info-container a {
+    color: #e0531f;
+   }
    
-   .contact-info-container a:hover {
-   color: #e0531f;
-  }
-  
   .contact-info-container p {
     font-size: larger;
   }

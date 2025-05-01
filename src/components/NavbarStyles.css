@@ -1,6 +1,6 @@
 
 header{
-
+background-color: #fff;
   height: 8rem;
   box-shadow: rgba(33,35,38,0.1)  0px 10px 10px -10px;
   width: 100%;
@@ -66,7 +66,7 @@ nav ul li a {
     position: absolute;
     top: 8rem;
     left: 0;
-    background-color: #000;
+    background-color: #fff;
     width: 100%;
     box-shadow: rgba(0,0,0,0.25) 0px 14px 28px;
   }
